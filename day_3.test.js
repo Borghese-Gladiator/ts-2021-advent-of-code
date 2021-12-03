@@ -1,4 +1,4 @@
-const { find_power_consumption } = require("./day_3");
+const { find_power_consumption, find_life_support_rating } = require("./day_3");
 test("Day 3 - Expected Data", () => {
   const data = [
     "00100",
@@ -15,4 +15,5 @@ test("Day 3 - Expected Data", () => {
     "01010",
   ]
   expect(find_power_consumption(data)).toBe(198);
+  expect(find_life_support_rating(data)).toBe(230);
 });
