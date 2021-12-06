@@ -92,6 +92,7 @@ function draw_line(grid, line, include_diagonal=false) {
       grid[from.y][i] += 1;
     }
   } else { // diagonal 45 degrees
+    // DIAGONAL DOES NOT WORK
     if (include_diagonal) {
       if ((from.x + to.x) % (from.y + to.y) === 0) {
         logger.info("Looping diagonal for points: ", from, to)
