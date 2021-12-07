@@ -15,3 +15,16 @@ December coding challenge that I'm doing with friends
 
 #### Python
 - Libraries - default ones of unittest & loggin
+- NOTE - setting a value equal to a parameter changes the value (passed by reference)
+```
+initial_fish_list = []
+forecast_population(80, initial_fish_list)
+forecast_population2(160, initial_fish_list)
+
+def forecast_population(num_days, initial_fish_list):
+  timer_list = initial_fish_list
+  for day in num_days:
+    timer_list += 1
+
+## initial_fish_list gets changed by forecast_population
+```
